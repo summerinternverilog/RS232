@@ -2,14 +2,14 @@ Command line:
    parityGenerator_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  65489
+     -socket  49334
 
-Sun Jun 30 19:14:40 2019
+Sun Jun 30 20:05:56 2019
 
 
- Elaboration Time: 0.09375 sec
+ Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 5334.97 Meg
+ Current Memory Usage: 5335.03 Meg
 
  Total Signals          : 16
  Total Nets             : 23
@@ -20,9 +20,9 @@ Sun Jun 30 19:14:40 2019
  Total Traceable Variables  : 20
  Total Scalar Nets and Variables : 136
 
- Total Simulation Time: 0.140625 sec
+ Total Simulation Time: 0.09375 sec
 
- Current Memory Usage: 5177.69 Meg
+ Current Memory Usage: 5649.6 Meg
 
-Sun Jun 30 19:16:59 2019
+Sun Jun 30 20:06:35 2019
 

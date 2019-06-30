@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/My Documents/Verilog/RS232/parityGenerator_isim_beh.exe" -prj "F:/My Documents/Verilog/RS232/parityGenerator_beh.prj" "work.parityGenerator" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/My Documents/Verilog/RS232/parityDetector_isim_beh.exe" -prj "F:/My Documents/Verilog/RS232/parityDetector_beh.prj" "work.parityDetector" "work.glbl" 
