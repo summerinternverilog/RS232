@@ -1,0 +1,10 @@
+Command line:
+   BaudRateGenerator_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51703
+
+Sat Jun 29 21:44:54 2019
+
+
+ Elaboration Time: 0.078125 sec

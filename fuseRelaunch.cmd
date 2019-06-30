@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/My Documents/Verilog/RS232/BaudRateGenerator_isim_beh.exe" -prj "F:/My Documents/Verilog/RS232/BaudRateGenerator_beh.prj" "work.BaudRateGenerator" "work.glbl" 
