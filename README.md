@@ -27,3 +27,15 @@ FPGA based implementation of RS232
     - Input:- clcok, reset and 7-bit data
     
     - Output:- yields the 8th bit for data so as to make it a even parity data. 
+   
+   -SIPO
+   
+    - Input:- clock, reset and data in serial form
+   
+    - Output:- data in 8-bit parallel form
+    
+   -Transmitter 
+   
+    - Input:- clock,reset, 8-bit data in parallel form, start bit
+    
+    - Output:- transmitted data in serial form, busy signal
