@@ -2,14 +2,14 @@ Command line:
    PISO_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  53417
+     -socket  54374
 
-Mon Jul 01 13:23:41 2019
+Mon Jul 01 19:04:12 2019
 
 
  Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 5334.96 Meg
+ Current Memory Usage: 5335.01 Meg
 
  Total Signals          : 16
  Total Nets             : 24
@@ -20,9 +20,9 @@ Mon Jul 01 13:23:41 2019
  Total Traceable Variables  : 22
  Total Scalar Nets and Variables : 177
 
- Total Simulation Time: 0.09375 sec
+ Total Simulation Time: 0.109375 sec
 
- Current Memory Usage: 5177.67 Meg
+ Current Memory Usage: 5177.72 Meg
 
-Mon Jul 01 13:24:50 2019
+Mon Jul 01 19:05:42 2019
 

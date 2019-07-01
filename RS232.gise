@@ -42,12 +42,24 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PISO.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PISO.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PISO.xst"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PISO_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PISO_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PISO_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PISO_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PISO_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PISO_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SIPO.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SIPO.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SIPO.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SIPO.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SIPO.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SIPO.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SIPO.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SIPO.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SIPO_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SIPO_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SIPO_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="SIPO_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SIPO_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SIPO_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -98,95 +110,97 @@
     <transform xil_pn:end_ts="1561823353" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1561823353">
       <status xil_pn:value="SuccessfullyRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561967617" xil_pn:in_ck="4650225840187869390" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1561967617">
+    <transform xil_pn:end_ts="1561989095" xil_pn:in_ck="7932457785802437197" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1561989095">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BaudRateGenerator.v"/>
       <outfile xil_pn:name="PISO.v"/>
+      <outfile xil_pn:name="SIPO.v"/>
       <outfile xil_pn:name="parityDetector.v"/>
       <outfile xil_pn:name="parityGenerator.v"/>
       <outfile xil_pn:name="transmitter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1561960472" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4395217809917286734" xil_pn:start_ts="1561960472">
+    <transform xil_pn:end_ts="1561988151" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-818491476480021646" xil_pn:start_ts="1561988151">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561960472" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2344937471593113460" xil_pn:start_ts="1561960472">
+    <transform xil_pn:end_ts="1561988151" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7087024949496732724" xil_pn:start_ts="1561988151">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561965314" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8593341312328433242" xil_pn:start_ts="1561965314">
+    <transform xil_pn:end_ts="1561988051" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8597931830058371866" xil_pn:start_ts="1561988051">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561967617" xil_pn:in_ck="4650225840187869390" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1561967617">
+    <transform xil_pn:end_ts="1561989095" xil_pn:in_ck="7932457785802437197" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1561989095">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BaudRateGenerator.v"/>
       <outfile xil_pn:name="PISO.v"/>
+      <outfile xil_pn:name="SIPO.v"/>
       <outfile xil_pn:name="parityDetector.v"/>
       <outfile xil_pn:name="parityGenerator.v"/>
       <outfile xil_pn:name="transmitter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1561967620" xil_pn:in_ck="4650225840187869390" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5999388778573563141" xil_pn:start_ts="1561967617">
+    <transform xil_pn:end_ts="1561989097" xil_pn:in_ck="7932457785802437197" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5528632256418406021" xil_pn:start_ts="1561989095">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PISO_beh.prj"/>
-      <outfile xil_pn:name="PISO_isim_beh.exe"/>
+      <outfile xil_pn:name="SIPO_beh.prj"/>
+      <outfile xil_pn:name="SIPO_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1561967620" xil_pn:in_ck="350615265422925605" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8650002199778691992" xil_pn:start_ts="1561967620">
+    <transform xil_pn:end_ts="1561989098" xil_pn:in_ck="5437049275432029039" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1379830540059195928" xil_pn:start_ts="1561989097">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PISO_isim_beh.wdb"/>
+      <outfile xil_pn:name="SIPO_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1561817830" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1561817829">
       <status xil_pn:value="SuccessfullyRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561965304" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6432973920294114060" xil_pn:start_ts="1561965304">
+    <transform xil_pn:end_ts="1561988037" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2856247586856848972" xil_pn:start_ts="1561988037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561965304" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8593341312328433242" xil_pn:start_ts="1561965304">
+    <transform xil_pn:end_ts="1561988037" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8597931830058371866" xil_pn:start_ts="1561988037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561965304" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1561965304">
+    <transform xil_pn:end_ts="1561988037" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1561988037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561965304" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4395217809917286734" xil_pn:start_ts="1561965304">
+    <transform xil_pn:end_ts="1561988037" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-818491476480021646" xil_pn:start_ts="1561988037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561965304" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1561965304">
+    <transform xil_pn:end_ts="1561988037" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1561988037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561965304" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1700797030797957532" xil_pn:start_ts="1561965304">
+    <transform xil_pn:end_ts="1561988037" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1696206513068018908" xil_pn:start_ts="1561988037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1561967584" xil_pn:in_ck="4650225840187869390" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3312327514800786273" xil_pn:start_ts="1561967576">
+    <transform xil_pn:end_ts="1561989089" xil_pn:in_ck="7932457785802437197" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3273610641547306975" xil_pn:start_ts="1561989082">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="PISO.lso"/>
-      <outfile xil_pn:name="PISO.ngc"/>
-      <outfile xil_pn:name="PISO.ngr"/>
-      <outfile xil_pn:name="PISO.prj"/>
-      <outfile xil_pn:name="PISO.stx"/>
-      <outfile xil_pn:name="PISO.syr"/>
-      <outfile xil_pn:name="PISO.xst"/>
-      <outfile xil_pn:name="PISO_beh.prj"/>
-      <outfile xil_pn:name="PISO_xst.xrpt"/>
+      <outfile xil_pn:name="SIPO.lso"/>
+      <outfile xil_pn:name="SIPO.ngc"/>
+      <outfile xil_pn:name="SIPO.ngr"/>
+      <outfile xil_pn:name="SIPO.prj"/>
+      <outfile xil_pn:name="SIPO.stx"/>
+      <outfile xil_pn:name="SIPO.syr"/>
+      <outfile xil_pn:name="SIPO.xst"/>
+      <outfile xil_pn:name="SIPO_beh.prj"/>
+      <outfile xil_pn:name="SIPO_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
