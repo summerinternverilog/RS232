@@ -5,28 +5,34 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">parityDetector.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">parityDetector.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">parityDetector.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">parityDetector.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">parityDetector.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">parityDetector.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">parityDetector.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">i</arg>&gt; in unit &lt;<arg fmt="%s" index="2">parityDetector</arg>&gt; has a constant value of <arg fmt="%s" index="3">1001</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">PISO.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">j</arg>&gt; in unit &lt;<arg fmt="%s" index="2">PISO</arg>&gt; has a constant value of <arg fmt="%s" index="3">1000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PISO</arg>&gt;.
 </msg>
 
 </messages>

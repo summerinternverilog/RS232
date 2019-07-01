@@ -120,22 +120,22 @@ Analyzing hierarchy for module <PISO> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <PISO>.
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
-WARNING:Xst:2323 - "PISO.v" line 42: Parameter 2 is not constant in call of system task $display.
-"PISO.v" line 42: $display : %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          0, temp = %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          1, temp = %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          2, temp = %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          3, temp = %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          4, temp = %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          5, temp = %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          6, temp = %d
+WARNING:Xst:2323 - "PISO.v" line 52: Parameter 3 is not constant in call of system task $display.
+"PISO.v" line 52: $display :  j =          7, temp = %d
 Module <PISO> is correct for synthesis.
  
 
@@ -144,14 +144,16 @@ Module <PISO> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <i> in unit <PISO> has a constant value of 1000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <j> in unit <PISO> has a constant value of 1000 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <PISO>.
     Related source file is "PISO.v".
-WARNING:Xst:647 - Input <data<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Using one-hot encoding for signal <i>.
     Found 1-bit register for signal <serialData>.
+    Found 2-bit register for signal <i>.
+    Found 8-bit register for signal <temp>.
     Summary:
-	inferred   1 D-type flip-flop(s).
+	inferred   9 D-type flip-flop(s).
 Unit <PISO> synthesized.
 
 
@@ -159,8 +161,9 @@ Unit <PISO> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 1
- 1-bit register                                        : 1
+# Registers                                            : 10
+ 1-bit register                                        : 9
+ 2-bit register                                        : 1
 
 =========================================================================
 
@@ -173,14 +176,15 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 1
- Flip-Flops                                            : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <i_1> of sequential type is unconnected in block <PISO>.
 
 Optimizing unit <PISO> ...
 
@@ -194,8 +198,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1
- Flip-Flops                                            : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
 
 =========================================================================
 
@@ -224,14 +228,21 @@ Design Statistics
 # IOs                              : 11
 
 Cell Usage :
-# BELS                             : 1
+# BELS                             : 34
+#      GND                         : 1
 #      INV                         : 1
-# FlipFlops/Latches                : 1
+#      LUT2                        : 17
+#      LUT3                        : 9
+#      LUT4                        : 4
+#      MUXF5                       : 2
+# FlipFlops/Latches                : 10
 #      FDC                         : 1
+#      FDCE                        : 1
+#      FDCP                        : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 3
-#      IBUF                        : 2
+# IO Buffers                       : 10
+#      IBUF                        : 9
 #      OBUF                        : 1
 =========================================================================
 
@@ -240,11 +251,11 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                        1  out of   4656     0%  
- Number of 4 input LUTs:                  1  out of   9312     0%  
+ Number of Slices:                       17  out of   4656     0%  
+ Number of Slice Flip Flops:             10  out of   9312     0%  
+ Number of 4 input LUTs:                 31  out of   9312     0%  
  Number of IOs:                          11
- Number of bonded IOBs:                   4  out of    232     1%  
-    IOB Flip Flops:                       1
+ Number of bonded IOBs:                  11  out of    232     4%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -268,7 +279,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 1     |
+clk                                | BUFGP                  | 10    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -276,15 +287,31 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-rst_inv(rst_inv1_INV_0:O)          | NONE(serialData)       | 1     |
+i_Acst_inv(i_Acst_inv1_INV_0:O)    | NONE(i_0)              | 2     |
+temp_0_and0000(temp_0_and00001:O)  | NONE(temp_0)           | 1     |
+temp_0_and0001(temp_0_and00011:O)  | NONE(temp_0)           | 1     |
+temp_1_and0000(temp_1_and00001:O)  | NONE(temp_1)           | 1     |
+temp_1_and0001(temp_1_and00011:O)  | NONE(temp_1)           | 1     |
+temp_2_and0000(temp_2_and00001:O)  | NONE(temp_2)           | 1     |
+temp_2_and0001(temp_2_and00011:O)  | NONE(temp_2)           | 1     |
+temp_3_and0000(temp_3_and00001:O)  | NONE(temp_3)           | 1     |
+temp_3_and0001(temp_3_and00011:O)  | NONE(temp_3)           | 1     |
+temp_4_and0000(temp_4_and00001:O)  | NONE(temp_4)           | 1     |
+temp_4_and0001(temp_4_and00011:O)  | NONE(temp_4)           | 1     |
+temp_5_and0000(temp_5_and00001:O)  | NONE(temp_5)           | 1     |
+temp_5_and0001(temp_5_and00011:O)  | NONE(temp_5)           | 1     |
+temp_6_and0000(temp_6_and00001:O)  | NONE(temp_6)           | 1     |
+temp_6_and0001(temp_6_and00011:O)  | NONE(temp_6)           | 1     |
+temp_7_and0000(temp_7_and00001:O)  | NONE(temp_7)           | 1     |
+temp_7_and0001(temp_7_and00011:O)  | NONE(temp_7)           | 1     |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: 1.946ns
+   Minimum period: 4.468ns (Maximum Frequency: 223.814MHz)
+   Minimum input arrival time before clock: 5.210ns
    Maximum output required time after clock: 4.283ns
    Maximum combinational path delay: No path found
 
@@ -293,23 +320,49 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.468ns (frequency: 223.814MHz)
+  Total number of paths / destination ports: 37 / 10
 -------------------------------------------------------------------------
-Offset:              1.946ns (Levels of Logic = 1)
-  Source:            data<7> (PAD)
-  Destination:       serialData (FF)
+Delay:               4.468ns (Levels of Logic = 2)
+  Source:            i_0 (FF)
+  Destination:       i_0 (FF)
+  Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: data<7> to serialData
+  Data Path: i_0 to i_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.218   0.420  data_7_IBUF (data_7_IBUF)
-     FDC:D                     0.308          serialData
+     FDCE:C->Q            11   0.591   0.933  i_0 (i_0)
+     MUXF5:S->O            2   0.739   0.526  i_cmp_eq000025 (i_cmp_eq000025)
+     LUT3:I1->O            1   0.704   0.420  i_not00011 (i_not0001)
+     FDCE:CE                   0.555          i_0
     ----------------------------------------
-    Total                      1.946ns (1.526ns logic, 0.420ns route)
-                                       (78.4% logic, 21.6% route)
+    Total                      4.468ns (2.589ns logic, 1.879ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 24 / 10
+-------------------------------------------------------------------------
+Offset:              5.210ns (Levels of Logic = 4)
+  Source:            data<4> (PAD)
+  Destination:       i_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: data<4> to i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  data_4_IBUF (data_4_IBUF)
+     LUT4:I0->O            1   0.704   0.000  i_cmp_eq000025_F (N01)
+     MUXF5:I0->O           2   0.321   0.526  i_cmp_eq000025 (i_cmp_eq000025)
+     LUT3:I1->O            1   0.704   0.420  i_not00011 (i_not0001)
+     FDCE:CE                   0.555          i_0
+    ----------------------------------------
+    Total                      5.210ns (3.502ns logic, 1.708ns route)
+                                       (67.2% logic, 32.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -334,11 +387,11 @@ Offset:              4.283ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.75 secs
+Total CPU time to Xst completion: 4.84 secs
  
 --> 
 
-Total memory usage is 4533960 kilobytes
+Total memory usage is 4533924 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    9 (   0 filtered)

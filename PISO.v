@@ -25,22 +25,39 @@ module PISO(
     output reg serialData
     );
 integer i;
+integer j;
+reg [7:0] temp ;
 initial 
 	begin
 		serialData = 0;
+		//temp = data;
+		i = 1;
 	end
 
 always @(posedge clk, negedge rst)
 	begin
 		if(!rst)
+		begin
 			serialData = 0;
+			temp = data;
+			i = 1;
+		end
 		else
-			begin 
-				for(i=0;i<=3'b111;i=i+1)
+			begin
+				if(i)
+				begin
+					for(j = 0;j<=3'b111;j=j+1)
 					begin
-						serialData = data[i];
-						$display("%d",serialData);
+						temp[j] = data[j];
+						$display(" j = %d, temp = %d",j,temp[j]);
 					end
+					i = 0;
+				end
+				if(temp==0)
+				i = 1;
+				serialData = temp[7];
+				temp = temp<<1'b1;
+				//$display("%d",temp);
 			end
 	end
 endmodule

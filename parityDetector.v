@@ -24,7 +24,7 @@ module parityDetector(
     input [7:0] data,
     output reg parityDetect
     );
-integer i;
+integer i;                //9211508978
 always @(posedge clk, negedge rst)
 begin
 	if(!rst)
