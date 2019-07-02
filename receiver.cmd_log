@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/My Documents/Verilog/RS232/receiver.xst" -ofn "F:/My Documents/Verilog/RS232/receiver.syr" 
+xst -intstyle ise -ifn "F:/My Documents/Verilog/RS232/receiver.xst" -ofn "F:/My Documents/Verilog/RS232/receiver.syr" 

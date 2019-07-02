@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/My Documents/Verilog/RS232/SIPO_isim_beh.exe" -prj "F:/My Documents/Verilog/RS232/SIPO_beh.prj" "work.SIPO" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/My Documents/Verilog/RS232/receiver_isim_beh.exe" -prj "F:/My Documents/Verilog/RS232/receiver_beh.prj" "work.receiver" "work.glbl" 
