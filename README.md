@@ -39,3 +39,9 @@ FPGA based implementation of RS232
     - Input:- clock,reset, 8-bit data in parallel form, start bit
     
     - Output:- transmitted data in serial form, busy signal
+    
+   -Receiver
+   
+    - Input:- clock,reset, data in serial form
+    
+    - Output:- transmitted data in 8-bit parallel form, ready signal
